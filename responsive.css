@@ -127,8 +127,7 @@
     .container_menu
     {
         width: 650px;
-        padding-top: 0;
-        padding-inline-start: 0; 
+        padding: 0;
     }
     .menu-item
     {
@@ -216,7 +215,6 @@
     .parent-Accommodation-Marseille
     {
         width: 100%;
-        border-radius: revert;
         background-color: white;
     }
     .title-Accommodation
@@ -245,7 +243,7 @@
         width: 100%;
         margin: auto;
         padding: 15px;
-        border-radius: revert;
+        border-radius: 0;
         box-sizing: border-box;
     }
     .most-popular-title
@@ -273,7 +271,7 @@
     {
         margin: 0;
         background-color: white;
-        border-radius: 0px;
+        border-radius: 0;
         width: 100%;
     }
     .title-activities-in-Marseille
