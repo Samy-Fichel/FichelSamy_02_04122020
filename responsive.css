@@ -13,6 +13,7 @@
     {
         flex-wrap: wrap;
     }
+    /*start Accommodation section in Marseille_Most popular*/
     .parent-section-most-popular-accommodation
     {
         flex-direction: column-reverse;
@@ -36,75 +37,65 @@
         margin-bottom: 30px;
         width: 80%;
     }
-    .card-popular
+    .card_popular
     {
         width: 90%;
     }
-    .popular_img
+    /*end Accommodation section in Marseille_Most popular*/
+    /*start section activities-in-Marseille*/
+    .parent-activities-section-in-Marseille
     {
-        width: 220px;
+        justify-content: center;
     }
-     /*start section activities-in-Marseille*/
-     .parent-activities-section-in-Marseille
-     {
-         justify-content: center;
-     }
-     .parent-activities-Marseille
-     {
-        align-items: center;
-     }
-     .title-activities-in-Marseille
-     {
-         display: flex;
+    .parent-activities-Marseille
+    {
+        margin: 30px;
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .title-activities-in-Marseille
+    {
+        display: flex;
         align-self: flex-start;
-        margin-left: 114px;
-     }
-     .child-activities-Marseille
-     {
-         flex-direction: column;
-         align-items: center;
-         width: 60%;
-         margin-top: -60px;
-     }
-     .card-activities
-     {
-         display: flex;
-         flex-direction: column-reverse;
-     }
-     .card-activity-1-4
-     {
-        margin: 15px;
-     }
-     .img-activities
-     {
-         height: 120px;
-     }
-     .img-activities-1-4
-     {
-         display: flex;
-         flex-direction: column;
-     }
-     .card-activity-2-4 
-     {
-         order: -1;
-     }
-     .text-card-activities
-     {
-         width: 98%;
-     }
-     .container-footer
-     {
-         flex-direction: column;
-     }
-     .href-footer
-     {
-         margin-left: -40px;
-     }
+        margin: 10px;
+        padding: 20px;
+    }
+    #child-activities-Marseille
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+    .card-activities
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-activities
+    {
+        height: 120px;
+    }
+    .img-card-big
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-card-activities
+    {
+        width: 98%;
+    }
+    .container-footer
+    {
+        flex-direction: column;
+    }
+    .href-footer
+    {
+        margin-left: -40px;
+    }
      /*end section activities-in-Marseille*/
 }
 /* start Media queries mobile*/
 @media screen and (max-width: 650px)
-
 {
     /*start HEADER*/
     .container-header
@@ -114,47 +105,58 @@
     .title_description
     {
         line-height: 1.5em;
-        margin-top: 50px;
+        margin-top: -10px;
     }
     p 
     {
         margin-top:-10px;
     }
+    .topbar
+    {
+        padding: 0;
+        display: block;
+    }
+    .logo
+    {
+        margin: 20px;
+    }
     nav 
     {
        display: flex;
-       position: absolute;
     }
     .container_menu
     {
-        
-        width: 50%;
-        padding-top: 40px;
-        padding-inline-start: 1px; 
+        width: 650px;
+        padding-top: 0;
+        padding-inline-start: 0; 
     }
     .menu-item
     {
         padding: 7px;
         width: 50%;
         text-align: center;
+        border-bottom: 3px solid lightgrey;
+        border-top: transparent;
+        margin: 0;
+        margin-right: -28px;
+    }
+    .menu-item:hover
+    {
+        border-bottom: 3px solid #0065FC;
     }
     .menu-item-signup
     {
-        margin: -40px 0 0 -45px;
+        margin: -65px 13px 0 -55px;
     }
     .a-href-menu
     {
-        border-bottom: 3px solid lightgrey;
         border-top: transparent;
+        margin: auto;
+        padding: 0;
     }
     .a-href-menu:hover
     {
        border-top: none;
-    }
-    .a-href-activities:hover
-    { 
-        border-bottom: 3px solid #0065FC;
-        border-top: transparent; 
     }
     .a-href-signup
     {
@@ -224,7 +226,7 @@
     }
     .child-accommodation
     {
-        margin-top: -32px;
+        margin-top: -30px
     }
     .card
     {
@@ -244,6 +246,7 @@
         margin: auto;
         padding: 15px;
         border-radius: revert;
+        box-sizing: border-box;
     }
     .most-popular-title
     {
@@ -253,14 +256,12 @@
     .child-popular
     {
         margin-top: -19px;
+        align-content: center;
     }
-    .card-popular
+    .card_popular
     {
-        width: 93%;
-    }
-    .popular_img
-    {
-        width: 40%;
+        width: 100%;
+        margin: 0 0 10px -3px;
     }
     .fa-chart-line
     {
@@ -268,30 +269,26 @@
     }
     /*end section parent-hebergement_the-most-popular*/
     /*start section activities-in-Marseille*/
+    .parent-activities-Marseille
+    {
+        margin: 0;
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+    }
     .title-activities-in-Marseille
     {
         margin-left: -7px;
     }
-    .child-activities-Marseille
+    .column-activity
     {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-    .card-activity-1-4
-    {
-       margin: 10px 0;
-    }
-    .img-activities
-    {
-        height: 120px;
-
+        width: 100%;
     }
     /*end section activities-in-Marseille*/
     /*start section footer*/
     #footer
     {
-       margin-right: -30px;
+        box-sizing: border-box;
     }
     .card-footer
     {

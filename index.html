@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Projet 2 Reservia</title>
     <meta name="description" content="Projet 2 Reservia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/65d272e922.js" crossorigin="anonymous"></script>
     <!--Link to the Releway font stylesheet, to the Google Fonts site-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,7 +15,6 @@
     <!--link to the stylesheet + media_queries-->
     <link rel="stylesheet" href="style.css" media="screen" />
     <link rel="stylesheet" href="responsive.css" media="screen" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -25,19 +25,17 @@
                     <div class="logo"><img src="images/logo/Reservia.svg" alt="logo Reservia" /></div>
                     <nav>
                         <ul class="container_menu">
-                            <li class="menu-item menu-hebergement"><a href="#anchor-accommodation-Marseille"
+                            <li class="menu-item"><a href="#anchor-accommodation-Marseille"
                                     class="a-href-menu">Hébergements</a></li>
-                            <li class="menu-item menu-activities"><a href="#anchor-activities-Marseille"
+                            <li class="menu-item"><a href="#anchor-activities-Marseille"
                                     class="a-href-menu a-href-activities">Activités</a></li>
-                            <li class="menu-item-signup"><a href="#" class="a-href-signup a-href-menu">S'inscrire</a>
-                            </li>
+                            <li class="menu-item-signup"><a href="#" class="a-href-signup a-href-menu">S'inscrire</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-
     <main class="container-content">
         <div class="container-inner-content">
             <div class="title_description">
@@ -298,50 +296,66 @@
                     <div class="title-activities-in-Marseille">
                         <h2>Activités à Marseille</h2>
                     </div>
-                    <div class="child-activities-Marseille">
-                        <div class="card-activities card-activity-1-4">
-                            <a href="#" class="href-activities">
-                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    class="img-activities img-activity-1-4" alt="img Vieux Ports">
-                                <h4 class="text-card-activities text-card-activity-1-4">Vieux Ports</h4>
-                            </a>
+                    <div id="child-activities-Marseille">
+                        <div class="column-activity">
+                            <div class="card-activity">
+                                <a href="#" class="href-activities">
+                                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                        class="img-activities img-card-big" alt="img Vieux Ports">
+                                    <div class="text-card-activity">
+                                        Vieux Ports
+                                    </div>
+                                </a>
+                            </div> 
                         </div>
-                        <div class="card-activities card-activity-2-4">
-                            <a href="#" class="href-activities">
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                    class="img-activities img-activity-2-5" alt="img Fort de Pomègues">
-                                <h4 class="text-card-activities text-card-activity-2-5 text-card-activities-2-6">Fort de
-                                    Pomègues</h4>
-                            </a>
-                            <div class="card-activities card-activity-2-4">
+                        <div class="column-activity">
+                            <div class="card-activity">
+                                <a href="#" class="href-activities">
+                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                        class="img-activities img-card-medium" alt="img Fort de Pomègues">
+                                    <div class="text-card-activity">
+                                        Fort de Pomègues
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-activity">
                                 <a href="#" class="href-activities">
                                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                        class=" img-activities img-activity-3-6" alt=" img Île du frioul">
-                                    <h4 class="text-card-activities text-card-activity-3-6 text-card-activities-2-6">Île
-                                        du frioul</h4>
+                                        class=" img-activities img-card-small" alt=" img Île du frioul">
+                                    <div class="text-card-activity">
+                                        Île du frioul
+                                    </div> 
                                 </a>
                             </div>
                         </div>
-                        <div class="card-activities card-activity-1-4">
-                            <a href="#" class="href-activities">
-                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                    class="img-activities img-activity-1-4" alt="img Parc National des Calanques">
-                                <h4 class="text-card-activities text-card-activity-1-4">Parc National des Calanques</h4>
-                            </a>
+                        <div class="column-activity">
+                            <div class="card-activity">
+                                <a href="#" class="href-activities">
+                                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                        class="img-activities img-card-big" alt="img Parc National des Calanques">
+                                    <div class="text-card-activity">
+                                        Parc National des Calanques
+                                    </div>
+                                </a>
+                            </div> 
                         </div>
-                        <div class="card-activities card-activity-2-4">
-                            <a href="#" class="href-activities">
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    class=" img-activities img-activity-2-5" alt="img Notre Dame de la Garde">
-                                <h4 class="text-card-activities text-card-activity-2-5 text-card-activities-2-6">Notre
-                                    Dame de la Garde</h4>
-                            </a>
-                            <div class="card-activities card-activity-2-4">
+                        <div class="column-activity">
+                            <div class="card-activity">
+                                <a href="#" class="href-activities">
+                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                        class=" img-activities img-card-medium" alt="img Notre Dame de la Garde">
+                                    <div class="text-card-activity">
+                                        Notre-Dame-de-la-Garde
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-activity">
                                 <a href="#" class="href-activities">
                                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                        class="img-activities img-activity-3-6" alt="img Parc Longchamp">
-                                    <h4 class="text-card-activities text-card-activity-3-6 text-card-activities-2-6">
-                                        Parc Longchamp</h4>
+                                        class="img-activities img-card-small" alt="img Parc Longchamp">
+                                    <div class="text-card-activity">
+                                        Parc Longchamp
+                                    </div> 
                                 </a>
                             </div>
                         </div>
