@@ -28,8 +28,8 @@ body
 }
 .container_menu
 {
-   display: flex;
-   list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
 .menu-item
 {
@@ -144,7 +144,7 @@ p
 }
 .fa-search 
 {
-   visibility: hidden;
+    visibility: hidden;
 }
 .section-filters
 {
@@ -189,24 +189,25 @@ p
 {
     padding: 2px 4px;
 }
-
 /*end section search+filters*/
 /*info 500 homes*/
 .info
 {
     display: flex;
     padding: 20px; 
+    align-items: center;
 }
 .info i
 {
-   border: 1px solid #cacaca;
-   padding: 7px;
-   width: 12px;
-   margin: 0 15px 5px 0;
-   font-size: 11px;
-   border-radius: 50%;
-   text-align: center;
-   color: #0065fc;
+    border: 1px solid #cacaca;
+    padding: 7px;
+    width: 12px;
+    height: 12px;
+    margin: 0 15px 5px 0;
+    font-size: 11px;
+    border-radius: 50%;
+    text-align: center;
+    color: #0065fc;
 }
 .info-text
 {
@@ -234,9 +235,9 @@ p
 }
 .child-accommodation
 {
-   display: flex;
-   flex-wrap: wrap;
-   margin: 0 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px 0 15px;
 }
 .card
 {
@@ -281,10 +282,6 @@ p
     font-weight: bold;
     font-size: small;
     padding-left: 1%;
-}
-b
-{
-    font-weight: bold;
 }
 .star
 {
@@ -502,6 +499,6 @@ b
 }
 .href-footer:hover
 {
-    color: blue;
+    color: #0065fc;
     cursor: pointer;
 }
